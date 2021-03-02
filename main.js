@@ -19,6 +19,7 @@ const pigLatin = (word) => {
   
   //Trims off whitespace at ends and all lowercase for input word (string)
   word= word.toLowerCase().trim();
+  // word = str.split(" "); -- fails test so need to work out the error... new variable name?
 
   // Make array of vowels to reference
   const vowels = ["a", "e", "i", "o", "u"];
@@ -43,6 +44,12 @@ const pigLatin = (word) => {
   //****************WORK ON THIS WEEK BEFORE WEDNESDAY CLASS ****************
 // IF USER ENTERS MULTIPLE WORDS- HOW TO THEN TAKE THEM, SEPERATE INTO DIFFERENT WORDS AND THEN RUN THROUGH MY FUNCTION?!?!
 //***************************************************************************
+
+// split() to split string into an array of substrings, returns new array.
+// then need to loop through array of substrings and apply same conditional logic as code above
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+//let word = str.split(" ");
+//
 
 
 // the first function called in the program to get an input from the user
