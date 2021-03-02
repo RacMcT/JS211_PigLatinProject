@@ -15,14 +15,18 @@ const pigLatin = (word) => {
 
   // Your code here
   //Turns variable "word" into an array (wordArr- each letter seperate - OR KEEP AS A STRING?
-  word= word.toLowerCase().trim();
   // let wordArr = word.split('')
   
-  // Make array of vowels
+  //Trims off whitespace at ends and all lowercase for input word (string)
+  word= word.toLowerCase().trim();
+
+  // Make array of vowels to reference
   const vowels = ["a", "e", "i", "o", "u"];
 
   // Set piglatin word to hold new word for output?
   let pigWord="";
+
+  //If it doesn't start with a vowel than by default it starts with a constanant- so simple if/else statement?
 
   if(vowels.indexOf(word[0]) > -1){
     pigWord = word + "yay";
