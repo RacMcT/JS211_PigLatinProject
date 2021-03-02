@@ -14,8 +14,27 @@ const rl = readline.createInterface({
 const pigLatin = (word) => {
 
   // Your code here
+  //Turns variable "word" into an array (wordArr- each letter seperate - OR KEEP AS A STRING?
+  word= word.toLowerCase().trim();
+  // let wordArr = word.split('')
+  
+  // Make array of vowels
+  const vowels = ["a", "e", "i", "o", "u"];
 
-}
+  // Set piglatin word to hold new word for output?
+  let pigWord="";
+
+  if(vowels.indexOf(word[0]) > -1){
+    pigWord = word + "yay";
+    return pigWord;
+  } else{
+    let firstMatch = word.match(/[aeiou]/g) || 0;
+    let vowels = word.indexOf (firstMatch [0]);
+    pigWord = word.substring(vowels) + word.substring(0,vowels) + "ay";
+    return pigWord;
+  }
+
+  }
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
@@ -55,10 +74,6 @@ if (typeof describe === 'function') {
   getPrompt();
 
 }
-
-
-
-
 
 
 // **********
