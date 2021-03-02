@@ -40,6 +40,11 @@ const pigLatin = (word) => {
 
   }
 
+  //****************WORK ON THIS WEEK BEFORE WEDNESDAY CLASS ****************
+// IF USER ENTERS MULTIPLE WORDS- HOW TO THEN TAKE THEM, SEPERATE INTO DIFFERENT WORDS AND THEN RUN THROUGH MY FUNCTION?!?!
+//***************************************************************************
+
+
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
 // to close it ctrl + C
