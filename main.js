@@ -21,6 +21,8 @@ const pigLatin = (word) => {
   word= word.toLowerCase().trim();
   // word = str.split(" "); -- fails test so need to work out the error... new variable name?
 
+  //ARE EDGE CASES OF MULTIPLE WORDS REQUIRED OR PUSH MYSELF??
+  
   // Make array of vowels to reference
   const vowels = ["a", "e", "i", "o", "u"];
 
